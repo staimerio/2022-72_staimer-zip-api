@@ -11,7 +11,7 @@ STORAGE_CREDENTIALS_DEFAULT = app.config.get('STORAGE_CREDENTIALS_DEFAULT')
 def zip_images(req: Request, res: Response, next: Next):
     """Validate obligate params"""
     _validate = validate_obligate_fields({
-        u'images_urls': req.param('images_urls'),
+        u'images_url': req.param('images_url'),
     })
     
     """Check if has errors return a error response"""

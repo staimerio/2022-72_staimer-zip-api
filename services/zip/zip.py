@@ -43,7 +43,7 @@ def create_folder(instance):
     return _path
 
 
-def get_images(instance, images_url):
+def get_images(instance, images_url=[]):
     _images_folder = create_folder(instance)
     _count = 1
     for _image_url in images_url:
