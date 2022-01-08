@@ -1,0 +1,6 @@
+retic==0.1.2
+requests==2.24.0
+bs4==0.0.1
+uuid==1.30
+
+# pip install retic requests bs4
