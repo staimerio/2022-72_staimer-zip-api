@@ -37,7 +37,7 @@ def get_instance():
 
 
 def create_folder(instance):
-    _path = "{0}/{1}".format(instance.image_path, instance.uuid)
+    _path = "{0}/{1}".format(instance.files_path, instance.uuid)
     _cmd = f'mkdir "{_path}"'
     _folder = os.system(_cmd)
     return _path
